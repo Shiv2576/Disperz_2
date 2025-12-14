@@ -30,9 +30,10 @@ const Navbar = () => {
 
               return (
                 <div
+                  className="hidden sm:inline-flex"
                   {...(!ready && {
                     "aria-hidden": true,
-                    className: "invisible", // better than opacity:0 for layout stability
+                    className: "invisible hidden sm:inline-flex",
                   })}
                 >
                   {connected ? (
